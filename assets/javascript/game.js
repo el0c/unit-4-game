@@ -114,7 +114,7 @@ const DataRecovery = function() {
         } else if (currentAddr === targetAddr) {
             updateWinCount(1);
 
-            $("#outputMessage").html("Congratulations!<br>Click anywhere to continue.");
+            $("#outputMessage").html("Address Target Successful!<br>Data Recovered.<br>Click anywhere to continue.");
             $("#lightBox").css({
                 "animation-name"  : "slide_down",
                 "background-color": "var(--color-mint-green)"
@@ -127,7 +127,7 @@ const DataRecovery = function() {
         } else {
             updateLossCount(1);
 
-            $("#outputMessage").html("You got greedy!<br>Click anywhere to continue.");
+            $("#outputMessage").html("Data Address Overshot! Data lost.<br>Click anywhere to continue.");
             $("#lightBox").css({
                 "animation-name"  : "shake",
                 "background-color": "var(--color-danger-red)"
