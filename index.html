@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cole Smith">
+    
+    <title>Data Destruction Defusal</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="container">
+        <h1>Data Destruction Defusal</h1>
+        
+        <!-- Directions -->
+        <section class="page">
+            <h2>Instructions:</h2>
+
+            <p>There are 4 buttons, each worth a certain amount.</p>
+            <p>Figure out the value of the buttons to target the correct memory address</p>
+            <p>*There is always a solution*</p>
+
+            <div class="page_next">Start</div>
+        </section>
+
+        <!-- Game Screen -->
+        <section class="page">
+            <section id="userStats">
+                <p>Data Recovered: <strong><span id="winCounter"></span></strong></p>
+                <p>Data Lost: <strong><span id="lossCounter"></span></strong></p>
+            </section>
+
+            <p>Target memory address: <span id="targetAddr"></span>!</p>
+            <p>Current address target: <strong><span id="currentAddr"></span></strong>.</p>
+
+            <section class="clearfix">
+                <img class="buttons" src="assets/images/keyboard_key_1.png" alt="Button 1">
+                <img class="buttons" src="assets/images/keyboard_key_2.png" alt="Button 2">
+                <img class="buttons" src="assets/images/keyboard_key_3.png" alt="Button 3">
+                <img class="buttons" src="assets/images/keyboard_key_4.png" alt="Button 4">
+            </section>
+
+            <div class="page_prev">Directions</div>
+        </section>
+    </section> 
+
+
+    <!-- Lightbox -->
+    <section id="lightBox_background"></section>
+
+    <section id="lightBox" class="container">
+        <p id="outputMessage"></p>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>
